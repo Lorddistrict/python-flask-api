@@ -1,0 +1,3 @@
+1. Into the .git/hooks folder
+2. Many languages like : shell, python, and more...
+3. The one named "pre-commit"
