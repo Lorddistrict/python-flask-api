@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/Lorddistrict/python-flask-api
+    rev: pylint-2.6.0
+    hooks:
+      - id: pylint
