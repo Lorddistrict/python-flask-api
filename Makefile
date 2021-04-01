@@ -6,6 +6,10 @@ build:
 run:
 	docker run -d -p 5000:5000 --name flasker flask-tutorial
 
+.PHONY: start ## Start
+start:
+	docker start flasker
+
 .PHONY: pylint ## Test
 pylint:
 	docker exec flasker pylint app.py
@@ -13,6 +17,3 @@ pylint:
 .PHONY: stop ## Stop
 stop:
 	docker stop flasker
-
-.PHONY: all ## All
-all: build run
